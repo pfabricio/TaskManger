@@ -12,10 +12,52 @@ API RESTful desenvolvida para gerenciamento de projetos, tarefas e comentários,
 - [Docker](https://www.docker.com/)  
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-### Execução via Docker
+### Execução via Docker com build + start
 
 ```bash
 docker-compose up --build
+```
+
+### Execução via Docker em segundo plano
+
+```bash
+docker-compose up --build -d
+```
+
+### Execução via Docker sem o build
+
+```bash
+docker-compose up
+```
+
+### Parar a execução do container
+
+```bash
+docker-compose down
+```
+
+### Parar e remover tudo (container + volumes + redes)
+
+```bash
+docker-compose down -v
+```
+
+### Rebuild de Containers
+
+```bash
+docker-compose up --force-recreate --build
+```
+
+### Ver logs dos containers
+
+```bash
+docker-compose logs
+```
+
+### Executar comando em container
+
+```bash
+docker-compose exec nome-do-servico bash
 ```
 
 > A API estará disponível em `http://localhost:5000`
