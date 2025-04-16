@@ -98,7 +98,7 @@ dotnet test
 - Dapper (opcional)  
 - MediatR  
 - Docker  
-- SQL Server (ou outro banco de sua preferência)  
+- Mysql 8.0 (ou outro banco de sua preferência)  
 - xUnit, Moq, Shouldly  
 - Clean Architecture + CQRS  
 
